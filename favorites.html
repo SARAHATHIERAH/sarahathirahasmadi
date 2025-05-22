@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Favorite Things ❁✿❀</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('catflower.jpg'); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      font-family: Impact, Charcoal, sans-serif;
+      color: #F8F8FF;
+      position: relative;
+      overflow-x: hidden;
+      cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"><text y="24" font-size="24">🍓</text></svg>') 16 16, auto;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    .content {
+      text-align: center;
+      padding-top: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      padding: 10px;
+    }
+
+    .gallery-item {
+      flex: 0 0 auto;
+      width: 220px;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .caption {
+      font-family: Impact, Charcoal, sans-serif;
+      color: #DCDCDC;
+      margin-top: 12px;
+      font-size: 16px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .gallery::-webkit-scrollbar {
+      height: 10px;
+    }
+
+    .gallery::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+
+    .gallery::-webkit-scrollbar-thumb {
+      background: #DB7093;
+      border-radius: 10px;
+    }
+
+    .gallery::-webkit-scrollbar-thumb:hover {
+      background: #FF69B4;
+    }
+
+    .button-container {
+      font-family: 'Stencil', sans-serif;
+      margin: 20px auto 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: nowrap;
+      max-width: 500px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #DB7093;
+      color: #C715853;
+      border: 3px solid #ff0078;
+      border-radius: 10px;
+      font-size: 16px;
+      text-decoration: none;
+      text-align: center;
+      user-select: none;
+      transition: background-color 0.3s ease;
+      width: 140px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #FFF8DC;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>My Favorite Things ❁✿❀</h1>
+
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="sunset.jpg" alt="Sunset">
+        <div class="caption">I love sunset so much !! Sunset really makes me heal 🥺</div>
+      </div>
+      <div class="gallery-item">
+        <img src="cat.jpg" alt="Cat">
+        <div class="caption">Cats make everything better with their cuteness 🐱</div>
+      </div>
+      <div class="gallery-item">
+        <img src="lego.jpg" alt="Lego">
+        <div class="caption">Building with LEGO sparks my creativity and gives me peace 🧱</div>
+      </div>
+      <div class="gallery-item">
+        <img src="makeup.jpg" alt="Makeup">
+        <div class="caption">Playing with makeup lets me express myself and feel extra magical ✨💄</div>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <a href="hobbies.html" class="button">⋆.˚ Back 🦋</a>
+      <a href="education.html" class="button">Next 🐇</a>
+      <a href="intro.html" class="button">⋆⌂ Home</a>
+    </div>
+  </div>
+</body>
+</html>

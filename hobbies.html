@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hobbies ✎ ⋆⑅˚₊</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    body {
+      background-image: url('purplegrid.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: 'Comic Sans MS', cursive;
+      text-align: center;
+      padding: 10px;
+      color: #c71585;
+      position: relative;
+      cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"><text y="24" font-size="24">🍓</text></svg>') 16 16, auto;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(255, 255, 255, 0.4);
+      z-index: -1;
+    }
+
+    h1 {
+      margin: 20px 0 10px;
+      font-family: 'Stencil', sans-serif;
+      font-weight: bold;
+      font-size: 2.4rem;
+      color: #FF00FF;
+    }
+
+    p.intro-text {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: 1rem;
+      margin: 0 0 20px;
+      color: #a8326a;
+    }
+
+    .hobbies-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: nowrap;
+      margin-top: 10px;
+    }
+
+    .hobby {
+      max-width: 210px;
+      text-align: center;
+      color: #c71585;
+      position: relative;
+    }
+
+    .hobby img {
+      border: 3px solid #8B008B;
+      width: 210px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(199, 21, 133, 0.3);
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+      user-select: none;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hobby::after {
+      content: "🔗";
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+      color: #ff69b4;
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+    }
+
+    .hobby:hover::after {
+      opacity: 1;
+    }
+
+    .hobby img:hover {
+      transform: scale(1.05);
+      border-color: #ff69b4;
+      box-shadow: 0 0 12px rgba(255, 105, 180, 0.8);
+    }
+
+    .pressed {
+      transform: scale(0.95) !important;
+      border-color: #ff69b4 !important;
+      box-shadow: 0 0 12px rgba(255, 105, 180, 0.8) !important;
+    }
+
+    .hobby p {
+      margin: 5px 0 0;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .button-container {
+      font-family: 'Stencil', sans-serif;
+      margin: 20px auto 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: nowrap;
+      max-width: 500px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #DB7093;
+      color: #C715853;
+      border: 3px solid #ff0078;
+      border-radius: 10px;
+      font-size: 16px;
+      text-decoration: none;
+      text-align: center;
+      user-select: none;
+      transition: background-color 0.3s ease;
+      width: 140px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #FFF8DC;
+    }
+
+    @media (max-width: 700px) {
+      .hobbies-container {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .hobby {
+        max-width: 45%;
+      }
+
+      .hobby img {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const clickSound = new Audio('mouse.mp3');
+      const hobbyImages = document.querySelectorAll('.hobby img');
+
+      hobbyImages.forEach(img => {
+        img.addEventListener('click', () => {
+          clickSound.currentTime = 0;
+          clickSound.play();
+          img.classList.add('pressed');
+          setTimeout(() => {
+            img.classList.remove('pressed');
+          }, 150);
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <h1>🕹️⋆˚࿔ My Hobbies</h1>
+  <p class="intro-text">Usually, I will do these in my free time<br>click the picture if you want to know detail •ﻌ•</p>
+
+  <div class="hobbies-container">
+    <div class="hobby">
+      <a href="fangirling.html" target="_blank">
+        <img src="nctdream.jpg" alt="Fangirling" />
+      </a>
+      <p>Fangirling</p>
+    </div>
+
+    <div class="hobby">
+      <a href="music.html" target="_blank">
+        <img src="keshi.jpg" alt="Music" />
+      </a>
+      <p>Music</p>
+    </div>
+
+    <div class="hobby">
+      <a href="kdrama.html" target="_blank">
+        <img src="scarletheart.jpg" alt="Kdrama" />
+      </a>
+      <p>Kdrama</p>
+    </div>
+  </div>
+
+  <div class="button-container">
+    <a href="family.html" class="button">⋆.˚ Back 🦋</a>
+    <a href="favorites.html" class="button">Next 🐇</a>
+    <a href="index.html" class="button">⋆⌂Home</a>
+  </div>
+</body>
+</html>

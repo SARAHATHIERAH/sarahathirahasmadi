@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>  Playlists 🎧ྀི</title>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Impact, Charcoal, sans-serif;
+      color: #f0e6d2;
+      text-align: center;
+      padding: 40px;
+      background: linear-gradient(to bottom, rgba(30,30,30,0.8), rgba(60,40,20,0.9)),
+                  url('music.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"><text y="24" font-size="24">🍓</text></svg>') 16 16, auto;
+    }
+
+    h1 {
+      font-size: 2.6em;
+      margin-bottom: 40px;
+      color: #f9f5ef;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    }
+
+    .playlist-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      padding: 20px 10px;
+    }
+
+    .track {
+      min-width: 350px;
+      max-width: 420px;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    .track:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+    }
+
+    iframe {
+      border-radius: 14px;
+      border: none;
+      width: 100%;
+      height: 100px;
+    }
+
+    .jazz {
+      background-color: #B0C4DE;
+    }
+
+    .blues {
+      background-color: #F5DEB3;
+    }
+
+    .soul {
+      background-color: #DCDCDC;
+    }
+
+    .playlist-container::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .playlist-container::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,0.3);
+      border-radius: 10px;
+    }
+
+    .artists-section {
+      margin-top: 60px;
+    }
+
+    .artists-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .artist-card {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s;
+    }
+
+    .artist-card:hover {
+      transform: scale(1.05);
+    }
+
+    .artist-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .artist-card h3 {
+      margin: 10px 0;
+      font-size: 1.2em;
+      color: #fff;
+    }
+
+    .artist-card p {
+      margin-bottom: 15px;
+      color: #ccc;
+    }
+
+    .artist-link {
+      color: inherit;
+      text-decoration: none;
+      display: block;
+    }
+
+    .artist-title {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #f9f5ef;
+    }
+
+
+  .button-container {
+      font-family: 'Stencil', sans-serif;
+      margin: 20px auto 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: nowrap;
+      max-width: 500px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #DB7093;
+      color: #C715853;
+      border: 3px solid #ff0078;
+      border-radius: 10px;
+      font-size: 16px;
+      text-decoration: none;
+      text-align: center;
+      user-select: none;
+      transition: background-color 0.3s ease;
+      width: 140px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #FFF8DC;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <h1>My Music Playlists 🎧ྀི</h1>
+  <p>Click to listen ! ༘⋆📼˚ ༘ ೀ⋆｡˚</p>
+
+  <div class="playlist-container">
+    <div class="track jazz">
+      <iframe src="https://open.spotify.com/embed/playlist/1Yeq6Von2mAPE4LeT8tNys?utm_source=generator"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <div class="track blues">
+      <iframe src="https://open.spotify.com/embed/playlist/1jtS8AQZAjNH9Wnm5lenv7?utm_source=generator"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <div class="track soul">
+      <iframe src="https://open.spotify.com/embed/playlist/0Z9CoqgaP2V9iXFn6gPsgH?utm_source=generator"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+  </div>
+
+<section class="artists-section">
+  <h2 class="artist-title">🎤 Favorite Artists</h2>
+  <div class="artists-grid">
+
+    <!-- Artist 1: NCT DREAM -->
+    <a href=https://open.spotify.com/artist/1gBUSTR3TyDdTVFIaQnc02?si=3v2B0Ts_TtOggjnGDliwUwtarget="_blank" class="artist-link">
+      <div class="artist-card">
+        <img src="kyu-spotify.jpg" alt="NCT DREAM">
+        <h3>NCT DREAM</h3>
+        <p>K-Pop</p>
+      </div>
+    </a>
+
+    <!-- Artist 2: Keshi -->
+    <a href="https://open.spotify.com/artist/3pc0bOVB5whxmD50W79wwO" target="_blank" class="artist-link">
+      <div class="artist-card">
+        <img src="keshi-spotify.jpg" alt="Keshi">
+        <h3>Keshi</h3>
+        <p>Lo-fi / R&B</p>
+      </div>
+    </a>
+
+    <!-- Artist 3: SZA -->
+    <a href=https://open.spotify.com/artist/7tYKF4w9nC0nq9CsPZTHyP?si=k1GH8JXDQgWe3K9Lteu-8Atarget="_blank" class="artist-link">
+      <div class="artist-card">
+        <img src="sza-spotify.jpg" alt="SZA">
+        <h3>SZA</h3>
+        <p>R&B / Neo-Soul</p>
+      </div>
+    </a>
+
+    <!-- Artist 4: Fourtwnty -->
+    <a href=https://open.spotify.com/artist/46cVq2dwPgzPE3X1VR9TMj?si=7DNTVwZMSziPqUaqL048VAtarget="_blank" class="artist-link">
+      <div class="artist-card">
+        <img src="fourtwnty-spotify.jpg" alt="Fourtwnty">
+        <h3>Fourtwnty</h3>
+        <p>Indie / Acoustic</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<div class="button-container">
+    <a href="hobbies.html" class="button">⋆.˚ Back 🦋</a>
+  </div>
+
+</body>
+</html>

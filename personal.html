@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Personal Info ⋆.˚🦋༘⋆</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+  
+  <style>
+    body {
+      position: relative;
+      margin: 0;
+      padding: 20px 40px 40px 40px;
+      text-align: center;
+      font-family: 'Comic Sans MS', cursive;
+      color: #c71585;
+      overflow: hidden;
+      cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"><text y="24" font-size="24">🍓</text></svg>') 16 16, auto; 
+    }
+
+    .bg {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url('maroon.jpg') center/cover no-repeat;
+      filter: brightness(0.5) contrast(0.8);
+      z-index: -1;
+    }
+
+    h1 {
+      font-family: 'broadway', cursive;
+      font-size: 2em;
+      color: #A52A2A;
+      background: #f2d7d5;
+      padding: 15px 30px;
+      border-radius: 25px;
+      border: 3px solid #ff0078;
+      display: inline-block;
+      user-select: none;
+      margin-bottom: 10px;
+    }
+
+    marquee {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 27px;
+      color: white;
+      margin: 15px auto 25px auto; 
+      user-select: none;
+      font-weight: bold;
+      -webkit-text-stroke: 1px #fff;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      display: block;
+      width: 60%; /* fixed width */
+      white-space: nowrap;
+    }
+
+    .content-container {
+      font-family: 'Quicksand', sans-serif;
+      color: #DC143C;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    .content-container img {
+      width: 250px;
+      border-radius: 20px;
+      border: 3px solid #ff0078;
+      padding: 5px;
+      background-color: #fff0f5;
+      box-shadow: 0 8px 20px rgba(199, 21, 133, 0.4);
+      animation: simpleShake 2.5s infinite ease-in-out;
+    }
+
+    @keyframes simpleShake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-3px) rotate(-1deg); }
+      50% { transform: translateX(3px) rotate(1deg); }
+      75% { transform: translateX(-2px) rotate(-1deg); }
+      100% { transform: translateX(0); }
+    }
+
+    .content-container p {
+      max-width: 380px;
+      font-size: 18px;
+      text-align: left;
+      background-color: rgba(255, 228, 225, 0.85);
+      padding: 20px;
+      border-radius: 20px;
+      border: 3px solid #ff0078;
+      box-shadow: 0 8px 20px rgba(199, 21, 133, 0.2);
+      line-height: 1.6;
+    }
+
+    .button-container {
+      font-family: 'Stencil', sans-serif;
+      margin: 15px auto 0 auto; 
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      max-width: 350px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #DB7093;
+      color:#C715853;
+      border: 3px solid #ff0078;
+      border-radius: 10px;
+      font-size: 16px;
+      text-decoration: none;
+      text-align: center;
+      user-select: none;
+      transition: background-color 0.3s ease;
+      width: 140px;
+    }
+
+    .button:hover {
+      background-color: #FFF8DC;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg"></div>
+
+  <audio id="bg-music" loop>
+    <source src="dream-run.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <h1> Personal Info ⋆.˚🦋༘⋆</h1>
+  
+  <marquee behavior="scroll" direction="left" scrollamount="5" loop="infinite" aria-label="Music control instructions">
+    please click anywhere to start/pause music ᓚ₍⑅^..^₎♡
+  </marquee>
+
+  <div class="content-container">
+    <img src="gambar3.jpg" alt="Sarah's Photo" />
+    <p>
+      Hello!<br><br>
+      This is a little bit about me:<br>
+      Name: Sarah Nur Athirah Binti Asmadi <br>
+      Student number: 2023167753<br>
+      Birthday: November 11, 2004<br>
+      Birthplace: Hospital Pusrawi, KL<br>
+      Hometown: Serendah, Selangor<br>
+      Favourite color: Purple, Brown, Maroon<br>
+    </p>
+  </div>
+
+  <div class="button-container">
+    <a href="index.html" class="button">⋆⌂Back Home</a>
+    <a href="family.html" class="button">Next ⋆⭒˚𖠋</a>
+  </div>
+
+  <script>
+    const audio = document.getElementById('bg-music');
+
+    document.body.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play().catch(e => {
+          console.log('Playback prevented:', e);
+        });
+      } else {
+        audio.pause();
+      }
+    });
+  </script>
+</body>
+</html>

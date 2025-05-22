@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ma Famille 𓍯𓂃𓏧♡</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      position: relative;
+      background-image: url('flower.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: 'Quicksand', sans-serif;
+      text-align: center;
+      padding: 10px 20px;
+      color: #FFFFFF;
+      margin: 0;
+      cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"><text y="24" font-size="24">🍓</text></svg>') 16 16, auto;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    .page-title {
+      font-family: 'Impact', Charcoal, sans-serif;
+      color: #EEE8AA;
+      font-size: 48px;
+      margin: 10px 0 5px;
+    }
+
+    .content-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .family-photo {
+      border: 5px solid #FF1493;
+      border-radius: 20px;
+      width: 250px;
+      max-width: 90%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .family-photo:hover {
+      transform: scale(1.05);
+    }
+
+    .paragraph-box {
+      background-color: rgba(0, 0, 0, 0.4);
+      border: 3px solid #FF1493;
+      border-radius: 20px;
+      padding: 20px;
+      max-width: 350px;
+      text-align: left;
+      font-size: 18px;
+      color: #FFDAB9;
+      font-weight: bold;
+    }
+
+    .paragraph-title {
+      font-family: Georgia, serif;
+      color: #FF69B4;
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .button-container {
+      font-family: 'Stencil', sans-serif;
+      margin: 20px auto 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: nowrap;
+      max-width: 500px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #DB7093;
+      color: #C715853;
+      border: 3px solid #ff0078;
+      border-radius: 10px;
+      font-size: 16px;
+      text-decoration: none;
+      text-align: center;
+      user-select: none;
+      transition: background-color 0.3s ease;
+      width: 140px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #FFF8DC;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1 class="page-title">Ma Famille 𓍯𓂃𓏧♡</h1>
+
+  <div class="content-container">
+    <div class="gallery">
+      <img src="gambar1.jpg" alt="Family Picture 1" class="family-photo" />
+      <img src="gambar2.jpg" alt="Family Picture 2" class="family-photo" />
+    </div>
+    <div class="paragraph-box">
+      <div class="paragraph-title">Meet My Family ᯓᡣ𐭩</div>
+      <p>
+        — the ones who stand by me through every chapter of life ♡ˎˊ˗
+        <br><br>
+        I come from a loving family of six. I have an older brother, and I'm the second child out of four siblings.
+        I’m also blessed with two younger siblings who always fill our home with laughter. Growing up together has
+        given us so many beautiful memories, and I’m truly grateful for each of them.
+        <br><br>
+        Thanks to ibuayah for everything they've done for us ‹𝟹
+      </p>
+    </div>
+  </div>
+
+  <div class="button-container">
+    <a href="personal.html" class="button">⋆.˚ Back 🦋</a>
+    <a href="hobbies.html" class="button">Next 🐇</a>
+    <a href="index.html" class="button">⋆⌂Home</a>
+  </div>
+
+</body>
+</html>

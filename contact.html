@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>📞 Contact Me</title>
+  <style>
+    body {
+      background-image: url('maroonred.jpg'); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: 'Poppins', sans-serif;
+      color: #a52a2a;
+      text-align: center;
+      padding: 30px;
+      position: relative;
+      z-index: 0;
+      cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"><text y="24" font-size="24">🍓</text></svg>') 16 16, auto;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Black overlay */
+      z-index: -1;
+    }
+
+    h1 {
+      color: #FFEBCD;
+      font-size: 36px;
+    }
+
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .contact-icons a {
+      text-decoration: none;
+      color: #FAF0E6;
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s;
+    }
+
+    .contact-icons a:hover {
+      transform: scale(1.1);
+    }
+
+    .contact-icons img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+      border-radius: 12px;
+    }
+
+    .button-container {
+      font-family: 'Stencil', sans-serif;
+      margin: 40px auto 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: nowrap;
+      max-width: 500px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #DB7093;
+      color: #C715853;
+      border: 3px solid #ff0078;
+      border-radius: 10px;
+      font-size: 16px;
+      text-decoration: none;
+      text-align: center;
+      user-select: none;
+      transition: background-color 0.3s ease;
+      width: 140px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #FFF8DC;
+    }
+  </style>
+</head>
+<body>
+  <h1>📞 Contact Me</h1>
+
+  <div class="contact-icons">
+    <a href="https://wa.me/60126182064" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" />
+      WhatsApp
+    </a>
+
+    <a href="https://www.tiktok.com/@ssmjjy11" target="_blank">
+      <img src="tt.png" alt="TikTok Logo" />
+      TikTok
+    </a>
+
+    <a href="https://www.instagram.com/sarahathierah" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" />
+      Instagram
+    </a>
+  </div>
+
+  <div class="button-container">
+    <a href="education.html" class="button">⋆.˚ Back 🦋</a>
+    <a href="index.html" class="button">⋆⌂ Home</a>
+  </div>
+
+  <!-- Audio for click sound -->
+  <audio id="clickSound" src="click-sound.mp3" preload="auto"></audio>
+
+  <script>
+    // Play click sound on button click
+    const clickSound = document.getElementById('clickSound');
+    document.querySelectorAll('.button').forEach(button => {
+      button.addEventListener('click', () => {
+        clickSound.currentTime = 0;
+        clickSound.play();
+      });
+    });
+  </script>
+</body>
+</html>

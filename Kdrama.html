@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drama List ⋆౨ৎ˚⟡˖ ࣪</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"><text y="24" font-size="24">🍓</text></svg>') 16 16, auto; 
+
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: url('drama.png') center center / cover no-repeat;
+      color: white;
+      min-height: 100vh;
+      padding: 30px 20px;
+      position: relative;
+    }
+
+    body::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 0;
+    }
+
+    h1 {
+      position: relative;
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2em;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 12px;
+      z-index: 1;
+    }
+
+    .drama-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .card-genre {
+      font-size: 14px;
+      color: #ddd;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    .card-description {
+      font-size: 14px;
+      color: #ccc;
+      margin-bottom: 12px;
+    }
+
+    .netflix-link {
+      display: inline-block;
+      padding: 8px 12px;
+      background-color: #e50914;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .netflix-link:hover {
+      background-color: #b00610;
+    }
+
+.button-container {
+      font-family: 'Stencil', sans-serif;
+      margin: 20px auto 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: nowrap;
+      max-width: 500px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #DB7093;
+      color: #C715853;
+      border: 3px solid #ff0078;
+      border-radius: 10px;
+      font-size: 16px;
+      text-decoration: none;
+      text-align: center;
+      user-select: none;
+      transition: background-color 0.3s ease;
+      width: 140px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #FFF8DC;
+    }
+
+  </style>
+</head>
+<body>
+  <h1> 🍿🎥✮⋆˙ My Top Korean Drama Picks 🍿🎥✮⋆˙</h1>
+
+  <div class="drama-grid">
+    
+    <div class="card">
+      <img src="tgbm-netflix.jpg" alt="The Good Bad Mother">
+      <div class="card-content">
+        <div class="card-title">The Good Bad Mother (2023)</div>
+        <div class="card-genre">Drama, Comedy, Family</div>
+        <div class="card-description">A prosecutor reverts to a childlike state after an accident, rekindling his bond with his mother.</div>
+        <a href="https://www.netflix.com/title/81669775" class="netflix-link" target="_blank">Watch on Netflix</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="tomorrow-netflix.jpg" alt="Tomorrow">
+      <div class="card-content">
+        <div class="card-title">Tomorrow (2022)</div>
+        <div class="card-genre">Fantasy, Drama, Supernatural</div>
+        <div class="card-description">A man joins a team of grim reapers whose mission is to save suicidal people.</div>
+        <a href="https://www.netflix.com/title/81503460" class="netflix-link" target="_blank">Watch on Netflix</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="18again-netflix.jpg" alt="18 Again">
+      <div class="card-content">
+        <div class="card-title">18 Again (2020)</div>
+        <div class="card-genre">Comedy, Fantasy, Romance</div>
+        <div class="card-description">A man gets a second chance when he turns back into his 18-year-old self just before his divorce.</div>
+        <a href="https://www.netflix.com/title/81350913" class="netflix-link" target="_blank">Watch on Netflix</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="yom-netflix.jpg" alt="Youth of May">
+      <div class="card-content">
+        <div class="card-title">Youth of May (2021)</div>
+        <div class="card-genre">Romance, Historical, Drama</div>
+        <div class="card-description">A medical student and a nurse fall in love during the turbulent times of the 1980 Gwangju Uprising.</div>
+        <a href="https://www.netflix.com/title/81502688" class="netflix-link" target="_blank">Watch on Netflix</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="happiness-netflix.jpg" alt="Happiness">
+      <div class="card-content">
+        <div class="card-title">Happiness (2021)</div>
+        <div class="card-genre">Thriller, Horror, Action</div>
+        <div class="card-description">A new type of deadly infectious disease breaks out in a high-rise apartment building.</div>
+        <a href="https://www.netflix.com/title/81520295" class="netflix-link" target="_blank">Watch on Netflix</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="tg-netflix.jpg" alt="The Glory">
+      <div class="card-content">
+        <div class="card-title">The Glory (2022)</div>
+        <div class="card-genre">Drama, Revenge, Psychological</div>
+        <div class="card-description">A woman plots revenge on the high school bullies who destroyed her life.</div>
+        <a href="https://www.netflix.com/title/81519223" class="netflix-link" target="_blank">Watch on Netflix</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="cloy-netflix.jpg" alt="Crash Landing on You">
+      <div class="card-content">
+        <div class="card-title">Crash Landing on You (2019)</div>
+        <div class="card-genre">Romance, Drama, Comedy</div>
+        <div class="card-description">A South Korean heiress crash lands in North Korea and falls in love with a soldier who tries to help her return.</div>
+        <a href="https://www.netflix.com/title/81159258" class="netflix-link" target="_blank">Watch on Netflix</a>
+      </div>
+    </div>
+
+   <div class="card">
+  <img src="uncannycounter-netflix.jpg" alt="The Uncanny Counter">
+  <div class="card-content">
+    <div class="card-title">The Uncanny Counter (2020)</div>
+    <div class="card-genre">Action, Supernatural, Mystery</div>
+    <div class="card-description">Demon hunters called Counters disguise themselves as noodle shop employees while tracking down evil spirits and sending them back.</div>
+    <a href="https://www.netflix.com/title/81323551" class="netflix-link" target="_blank">Watch on Netflix</a>
+  </div>
+</div>
+
+<div class="button-container">
+    <a href="hobbies.html" class="button">⋆.˚ Back 🦋</a>
+  </div>
+</body>
+</html>
